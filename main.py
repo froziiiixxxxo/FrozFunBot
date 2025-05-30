@@ -19,7 +19,7 @@ user_tasks = {}
 choices = ['камень', 'ножницы', 'бумага']
 playing_cuefa = set()
 
-API_TOKEN = '8100327987:AAEwtDNoXJmP6LbXHO37TeNZgUNJ0s4HuAc'
+API_TOKEN = 'my token'
 bot = telebot.TeleBot(API_TOKEN)
 
 secret_number = None
@@ -39,8 +39,8 @@ def send_welcome(message):
 def send_help(message):
     bot.reply_to(message, """
 Список команд - /commands
-Связь с владельцем - @frozi_n3
-Нашли ошибку? Пишите - @frozi_n3
+Связь с владельцем - @user
+Нашли ошибку? Пишите - @user
 """)
 
 
